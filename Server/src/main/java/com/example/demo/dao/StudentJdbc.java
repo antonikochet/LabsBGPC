@@ -67,5 +67,9 @@ public class StudentJdbc {
                 resultSet.getInt("study_group_id")
         );
     }
+
+    public List<Student> getAllLocal(){
+        return jdbcTemplate.query("SELECT * FROM student_local", this::mapStudent);
+    }
 }
 
