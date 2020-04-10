@@ -4,9 +4,10 @@ import com.example.demo.model.StudyGroup;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+@CrossOrigin(origins = "http://localhost:3000")
 
 @RestController
-@RequestMapping("/study-group")
+    @RequestMapping("/study-group")
 public class StudyGroupController {
     private final StudyGroupJdbc studyGroupJdbc;
 
